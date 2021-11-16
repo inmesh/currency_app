@@ -1,5 +1,5 @@
 # Currency App
 
-Currency app - with a currency converter and charts.
-Written in React.js, and using Bootstrap.
+Currency app - with a currency converter and charts.</br>
+Written in React.js, and using Bootstrap.</br>
 See it work here --> 
