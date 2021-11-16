@@ -54,7 +54,7 @@ export default function CurrItemsMaster(props) {
 
     // Calculates the number of elements to show on screen depending on screen width. Returns a list of Carousel Item.
     function mapItemToCarousel() {
-        let numOfItems = parseInt(width / 125)
+        let numOfItems = parseInt(width / 120)
         let retItems = []
         for (let i = 0; i < currList.length; i += numOfItems) {
             retItems.push(
