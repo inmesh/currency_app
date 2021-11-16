@@ -1,0 +1,328 @@
+body {
+  background-color: #495057;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* bootstrap spinner */
+.spinner-border {
+  margin: 30vh 45vw;
+}
+
+/* bootstrap navbar */
+
+.costumeNav {
+  background-color: rgba(255, 99, 133, 0.75);
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.container a {
+  padding: 0;
+}
+
+.container img {
+  /* -webkit-filter: invert(1);
+  filter: invert(1); */
+  margin-left: 20px;
+}
+
+.ChartMaster {
+  padding-bottom: 20vh;
+}
+
+/* Currency Items */
+
+.ItemsCont {
+  background-color: #212529;
+  width: 100vw;
+  position: fixed;
+  bottom: 0px;
+}
+
+.item {
+  color: white;
+  padding: 0 2vw;
+  flex: 1;
+}
+
+.item * {
+  margin: 5px;
+}
+
+.item h5 {
+  font-size: 0.8em;
+}
+
+.item p {
+  font-size: 0.8em;
+}
+
+.item .rate {
+  font-weight: bolder;
+}
+
+.ItemsCont footer {
+  font-size: 0.8em;
+  color:gray;
+  padding-left: .5rem
+}
+
+.itemsList {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  margin: 0;
+}
+
+.flag-icon {
+  border-radius: 50%;
+  height: auto;
+}
+
+.flags {
+  display: flex;
+}
+
+/* bootstrap carousel */
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+  display: flex;
+  display: visible;
+  justify-content: center;
+  width: 100vw;
+  margin-left: 2vw;
+}
+
+.carousel-slide {
+  width: 100%;
+}
+
+.carousel-inner {
+  width: 100vw;
+  margin: 0;
+}
+
+.carousel-control-prev {
+  justify-content: left;
+  width: max-content;
+}
+
+.carousel-control-next {
+  justify-content: right;
+  width: max-content;
+}
+
+/* ChartMaster */
+
+.ChartMaster {
+  color: black;
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.graphsForms {
+  margin: auto;
+}
+
+.ChartCont {
+  width: 70vw;
+  margin: 30px auto;
+  max-width: 550px;
+}
+
+.CurrForm {
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.CurrForm form {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  row-gap: 2vh;
+  column-gap: 1vh;
+  color: white;
+}
+
+.CurrForm select, .ExchangeCont select {
+  width: 150px;
+  border-radius: 0.5rem;
+}
+
+.TimeSelectors label {
+  margin: 4px;
+  padding: 0.1em 0.7em;
+  font-size: 0.95em;
+}
+
+.TimeSelectors {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ChartInfo {
+  justify-content: center;
+  color: white;
+}
+
+.ChartInfo p {
+  margin: 0;
+  font-size: 0.8em;
+  display: inline-block;
+}
+
+.ChartInfo p:last-child::before {
+  content: "\00a0\00a0|\00a0";
+}
+
+.ChartInfo h5 {
+  color: rgb(255, 99, 132);
+  font-weight: bolder;
+  display: inline-block;
+  margin: 3px;
+}
+
+@media only screen and (max-width: 830px) {
+  .ChartMaster {
+    flex-direction: column;
+  }
+
+  .ChartCont {
+    margin: 0px auto;
+    width: 90vw;
+  }
+
+  .ChartInfo {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 830px) and (min-width: 630px) {
+  .CurrForm form {
+    grid-template-columns: repeat(4, max-content);
+    grid-template-rows: 1fr;
+    column-gap: 3vh;
+  }
+
+  .graphsForms {
+    margin-top: 20px;
+  }
+}
+
+/* fill narrow, long screens */
+@media only screen and (min-height: 600px), (max-width: 430px) {
+  .ChartMaster {
+    margin-top: 2vh;
+  }
+
+  canvas {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .ChartInfo h5, .ChartInfo p {
+    display: block;
+  }
+
+  .ChartInfo p:last-child::before {
+    content: "";
+  }
+}
+
+/* Exchange Master */
+
+.ExchangeMaster {
+  padding: 50px;
+  color: white;
+}
+
+.ExchangeCont {
+  width: max-content;
+  margin: 10px auto;
+}
+
+.ExchangeCont input {
+  border: none;
+  background-color: inherit;
+  border-bottom: 1.5px solid white;
+  width: 100px;
+  color: white;
+}
+
+.ExchangeCont input:focus {
+  outline: none;
+}
+
+.ExchangeCont select {
+  border-radius: 0.5rem;
+  margin: 20px;
+  padding: 2px;
+  border: none;
+}
+
+.ExchangeCont button {
+  background-color: rgb(255, 99, 132);
+  /* background-color: #55a630; */
+  border: 2px solid rgb(189, 101, 123);
+  border-radius: 50%;
+}
+
+.ExchangeMaster .result {
+  background-color: #6c757d;
+  border-radius: 0.5rem;
+  width: max-content;
+  padding: 2vh;
+  letter-spacing: 0.07em;
+  margin: 30px auto;
+}
+
+@media screen and (max-width: 570px) {
+  .ExchangeCont input, .ExchangeCont select, .ExchangeCont button {
+    display: block;
+  }
+
+  .ExchangeCont select, .result {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .ExchangeCont button {
+    margin: 0 auto;
+  }
+}
+
+/* about */
+.about {
+  margin-top: 20vh;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.about h5 {
+  margin-bottom: 30px;
+}
+
+.about a {
+  size: fit-content;
+  margin: 15px;
+}
+
+.about img {
+  filter: brightness(0) invert(1);
+}
